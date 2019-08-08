@@ -41,9 +41,18 @@ by rearranging the letters of word
 
 From this we know we would iterate through each letter in the string. 
 
+abc acb bac bca cab cba
+apps apsp aspp sapp 
+sapp spap psap
+psap pspa ppsa
+ppsa ppas
+apsp paps 
+paps pasp
+spap sppa
 
 
-  
+
+
  */
 
 
