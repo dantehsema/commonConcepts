@@ -41,7 +41,7 @@ by rearranging the letters of word
 
 
 a
-as 
+as
 asp
 aspp
 
@@ -61,43 +61,45 @@ spp
 sppa
 
 
-a
+apps
 
-s
+sppa
 
-p
+ppsa
 
-p
-
-
-
-p
-
-s
-
-p
-
-a
+ppsa
 
 
 
-p
+paps
 
-s
+sapp
 
-p
+pasp
 
-a
+apsp
 
 
 
-s
+paps
 
-p
+sapp
 
-p
+pasp
 
-a
+apsp
+
+
+
+sapp
+
+paps
+
+paps
+
+apps
+
+
 From this we know we would iterate through each letter in the string. 
 
 abc acb bac bca cab cba
@@ -113,5 +115,15 @@ spap sppa
 
 
  */
+
+
+const fibonacci = function(num) { 
+   if (num <= 1) {    
+    return num; 
+  } else {    
+    console.log(num);
+    return fibonacci(num - 1) + fibonacci(num - 2);  
+  }
+}
 
 
