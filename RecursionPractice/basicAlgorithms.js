@@ -139,5 +139,28 @@ else r
 //truncate a string
 function truncateString(str, num) {
   // Clear out that junk in your trunk
-  return str.slice(0,num) + '...';
+  if(num === str.length){
+   return str;
+  }else{
+   return str.slice(0,num) + '...';
+  }
+
+}
+
+
+
+//return value of function if true or undefined if false
+function findElement(arr, func) {
+ let num;
+ for(let i=0; i<arr.length; i++){
+  num = arr[i];
+  console.log('items in arr[i]:', num);
+
+ }
+ console.lo
+if(func == true){
+  return true;
+}else{
+  return;
+}
 }

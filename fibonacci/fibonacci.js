@@ -35,12 +35,30 @@ then I would write the recursive case
 */
 
 function fibonacci(num){
-	if(num <= 0){
-		return '';
-	}else if(num = 1){
-		return 1;
+	let fibArr = [];
+	if(num <= 1){
+		return num;
 	}else{
-		console.log(num)
-		return fibonacci(num-2) + fibonacci(num - 1);
+		console.log('recusive case', num)
+		
+		fibonacci(num-2) + fibonacci(num - 1);
+		fibArr.push(num)
+		
+
 	}
+
+	console.log(fibArr);
+	return fibArr;
 }
+
+
+
+
+/*
+Why fibonacci should return num instead of 1:
+
+because sometimes fibonnaci can return a 0 and you do not want the 0s to be converted to 1s. 
+that is where you end up having more fibonacci numbers than intended.
+Also a fibonacci of zero does not exist. So if you make it return 1 instead of num you give a value
+to the fibonacci of zero.
+*/
