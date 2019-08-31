@@ -34,21 +34,19 @@ then I would write the recursive case
 	-so we return fib(num-2) + fib(num-1)
 */
 
+var fibArr = [];
 function fibonacci(num){
-	let fibArr = [];
 	if(num <= 1){
+		//fibArr.push(num)
 		return num;
 	}else{
-		console.log('recusive case', num)
-		
-		fibonacci(num-2) + fibonacci(num - 1);
-		fibArr.push(num)
-		
-
+	//	console.log('recusive case', num)
+		fibArr.push((num-2) + (num-1))
+		return fibonacci(num-2) + fibonacci(num - 1);
 	}
 
-	console.log(fibArr);
-	return fibArr;
+	//console.log(fibArr);
+	//return fibArr;
 }
 
 

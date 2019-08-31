@@ -149,18 +149,21 @@ function truncateString(str, num) {
 
 
 
+
+
+
+
+
+
 //return value of function if true or undefined if false
 function findElement(arr, func) {
  let num;
  for(let i=0; i<arr.length; i++){
   num = arr[i];
   console.log('items in arr[i]:', num);
-
+  console.log('This is num:', num);
+  if(func == true){
+    return true;
+  }
+  }
  }
- console.lo
-if(func == true){
-  return true;
-}else{
-  return;
-}
-}

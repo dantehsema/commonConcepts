@@ -117,13 +117,11 @@ spap sppa
  */
 
 
-const fibonacci = function(num) { 
-   if (num <= 1) {    
-    return num; 
-  } else {    
-    console.log(num);
-    return fibonacci(num - 1) + fibonacci(num - 2);  
-  }
-}
-
-
+/*
+write a funtion that takes a sting
+first I would split the string to an array
+then I would pop the last character and unshift it to the begining of my array
+the new word will check the array to see if it exist, if it does not it will push it to 
+an array
+then then it will take a word from that new array and do the same thing again
+*/
